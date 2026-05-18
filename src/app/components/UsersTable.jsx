@@ -27,7 +27,7 @@ const UsersTable = ({ users, deleteUserAction }) => {
                                     <Table.Cell>{user.role}</Table.Cell>
                                     <Table.Cell className="space-x-2">
                                         <Link href={`/users/${user._id}`}><Button variant="outline">Details</Button></Link>
-                                        <Button variant="secondary">Edit</Button>
+                                        <Link href={`/users/${user._id}/edit`}><Button variant="secondary">Edit</Button></Link>
 
                                         <AlertDialog>
                                             <Button variant="danger">Delete</Button>
